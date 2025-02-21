@@ -24,8 +24,8 @@
           }
 
   @include smartphone-vertical {
-      @include mobile-gallery-container(60vh);
-      margin-top: 30vh;
+      @include mobile-gallery-container(20vh);
+      margin-top: 45vh;
     }
 
   @include smartphone-horizontal {
@@ -38,7 +38,6 @@
   .image-box {
     width: 300px;
     opacity: 0.5;
-    // transform: scale(0.95);
     margin-right: 10px;
 
     &:not(.tall) {

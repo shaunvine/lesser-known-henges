@@ -516,8 +516,8 @@ video {
     flex-direction: column;
     height: auto;
     top: 100px;
-    padding-bottom: 60vh;
-    margin-top: 30vh;
+    padding-bottom: 20vh;
+    margin-top: 45vh;
   }
 }
 @media (orientation: landscape) and (max-height: 450px) {
