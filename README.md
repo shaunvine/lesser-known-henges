@@ -1,6 +1,6 @@
 # The Lesser Know Henges V2
 
-This project is a portfolio project to practice SCSS to built a simple staic website.
+This project is a portfolio project from ZTM to practice SCSS to built a simple staic website.
 
 To start the Dev server click "Go Live"
 
