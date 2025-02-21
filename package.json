@@ -1,7 +1,7 @@
 {
-  "name": "hengesv2",
+  "name": "lesser-known-henges",
   "version": "1.0.0",
-  "description": "HengesV2",
+  "description": "Lesser Known Henges",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
