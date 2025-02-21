@@ -19,21 +19,19 @@
     }
 
     @include smartphone-small {
-            padding-bottom: 20vh;
-            margin-top: 65vh;
-          }
-
-  @include smartphone-vertical {
-      @include mobile-gallery-container(20vh);
-      margin-top: 45vh;
+      padding-bottom: 20vh;
+      margin-top: 65vh;
     }
 
-  @include smartphone-horizontal {
+    @include smartphone-vertical {
+      @include mobile-gallery-container(20vh);
+      margin-top: 50vh;
+    }
+
+    @include smartphone-horizontal {
       @include mobile-gallery-container(30vh);
     }
   }
-
-  
 
   .image-box {
     width: 300px;
@@ -114,5 +112,4 @@
       @include mobile-gallery-box(90%);
     }
   }
-  
 }

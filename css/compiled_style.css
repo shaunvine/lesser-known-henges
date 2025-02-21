@@ -517,7 +517,7 @@ video {
     height: auto;
     top: 100px;
     padding-bottom: 20vh;
-    margin-top: 45vh;
+    margin-top: 50vh;
   }
 }
 @media (orientation: landscape) and (max-height: 450px) {
