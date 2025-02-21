@@ -3,3 +3,5 @@ node_modules/
 
 # Source maps (if they are in a specific directory or have a specific extension)
 *.map
+
+.DS_Store
