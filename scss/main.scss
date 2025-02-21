@@ -1,0 +1,48 @@
+// Import Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;;600;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.atkinson-hyperlegible-regular {
+  font-family: "Atkinson Hyperlegible", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-bold {
+  font-family: "Atkinson Hyperlegible", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-regular-italic {
+  font-family: "Atkinson Hyperlegible", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.atkinson-hyperlegible-bold-italic {
+  font-family: "Atkinson Hyperlegible", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.alt-text {
+  display: none;
+  color: rgb(150, 150, 150);
+  font-size: 18px;
+  font-weight: bold;
+  background: #2c2c2c;
+  padding: 5px;
+}
+
+
+
+// Import SCSS partials
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "scrollbar";
+@import "layout";

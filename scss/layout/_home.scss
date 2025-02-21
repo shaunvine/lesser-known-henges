@@ -1,0 +1,90 @@
+/* ----------- Home Section ------------ */
+
+.video-container {
+  position: relative; /* To use z-index the position property must be present */
+  z-index: -1; /* This will make the video appear behind the content */
+  height: 100vh;
+  display: grid;
+  //   place-items: center;
+}
+
+video {
+  @extend %full-screen-fixed;
+  object-fit: cover;
+}
+
+.overlay {
+  @extend %full-screen-fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+
+  .intro-text {
+    margin-top: 5%;
+  } 
+
+  h1 {
+    position: relative;
+    font-family: "MedievalSharp", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: clamp(3.5rem, 5vw, 6rem);
+    z-index: 10;
+    font-weight: 500;
+    padding: 0.25rem;
+
+    @include tablet-vertical {
+      font-size: 5rem;
+      margin-top: 5rem;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  p {
+    font-family: "MedievalSharp", sans-serif;
+    color: lighten($primary-font-color, $amount: 20%);
+    position: relative;
+    text-align: center;
+    font-size: clamp(1rem, 5vw, 2rem);
+    font-weight: 200;
+  }
+  p.slogan {
+    color: lighten($primary-font-color, $amount: 20%);
+    position: relative;
+    text-align: center;
+    font-size: clamp(.5rem, 5vw, 1.5rem);
+    font-weight: 400;
+  }
+
+  .credit-text {
+    color: $primary-font-color;
+    position: relative;
+    align-content: end;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: clamp(0.25rem, 5vw, 0.75rem);
+    font-family: "MedievalSharp", sans-serif;
+    font-weight: 100;
+  }
+
+  .credit-text a {
+    font-family: "MedievalSharp", sans-serif;
+    color: $primary-font-color;
+    text-decoration: none;
+    font-weight: 100;
+  }
+}
+
+.image-box img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.image-box img:hover {
+  filter: brightness(50%); /* Darkens the image */
+}
+
+
+ 

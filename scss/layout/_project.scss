@@ -1,0 +1,137 @@
+/* Project Single Page -------------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Atkinson Hyperlegible", serif;
+  line-height: 1.8;
+  font-weight: 400;
+  min-height: 100vh;
+}
+
+.main {
+  display: grid;
+  width: 80%;
+  margin: 10px auto;
+}
+
+// .featured-article img,
+// .article img {
+//   width: 100%;
+//   object-fit: cover;
+//   margin-bottom: 15px;
+//   border-radius: 10px;
+// }
+
+.featured-article {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  margin: 2.5rem auto;
+
+  @include tablet-vertical {
+    width: 100%;
+  }
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 75vh;
+  margin-bottom: 30px;
+}
+
+img {
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: "MedievalSharp", sans-serif;
+  color: $primary-font-color;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin: 15px 0;
+}
+h2 {
+  text-align: center;
+  margin: 2px auto;
+  font-family: "MedievalSharp", sans-serif;
+  color: $primary-font-color;
+  font-size: clamp(1rem, 5vw, 2rem);
+
+   @include smartphone-vertical {
+    margin-top: 15px;
+   }
+
+   @include smartphone-horizontal {
+    margin-top: 20px;
+   }
+}
+
+p.project-description {
+  width: 80%;
+  color: $primary-font-color;
+  font-size: clamp(0.75rem, 5vw, 1.25rem);
+  line-height: 1.5;
+  margin: 1rem auto 2rem auto;
+}
+
+/* Related Henges */
+
+.projects-blade {
+  background: lighten($background-alt, $amount: 5%);
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.smaller-articles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-row {
+  display: flex;
+  width: 90%;
+
+  @include smartphone-vertical {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.article {
+  flex: 1;
+  padding: 10px;
+}
+
+.article img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+
+  @include smartphone-vertical {
+    height: 250px;
+  }
+}
+
+.article img:hover {
+  filter: brightness(50%); /* Darkens the image */
+}
+
+.project-description.credit {
+     font-family: "MedievalSharp", sans-serif;
+    color: $primary-font-color;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: .75rem;
+}

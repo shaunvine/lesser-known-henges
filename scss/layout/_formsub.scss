@@ -1,0 +1,48 @@
+/* Form Sub Message  -------------------- */
+
+.formsub-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+
+  .formsub {
+    visibility: hidden;
+    min-width: 250px;
+    background: #f2f2f2;
+    color: #222222;
+    text-align: center;
+    border-radius: 8px;
+    padding: 1rem;
+    position: fixed;
+    top: 10px;
+    z-index: 100;
+    font-size: 1.5rem;
+
+    &.show {
+      visibility: visible;
+      animation: fadeIn 0.5s, fadeOut 0.5s 9.5s;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      top: 0;
+    }
+    to {
+      opacity: 1;
+      top: 10px;
+    }
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      top: 10px;
+    }
+    to {
+      opacity: 0;
+      top: 0;
+    }
+  }
+}
