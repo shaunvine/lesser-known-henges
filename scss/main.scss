@@ -38,6 +38,11 @@
   padding: 5px;
 }
 
+a {
+    text-decoration: none;
+    -webkit-text-decoration: none; /* Safari-specific */
+}
+
 
 
 // Import SCSS partials

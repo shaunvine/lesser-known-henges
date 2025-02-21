@@ -90,7 +90,7 @@
 }
 // Phone Small
 @mixin smartphone-small {
- @media (orientation: portrait) and (max-height: 700px) {
+  @media (orientation: portrait) and (max-height: 700px) {
     @content;
   }
 }

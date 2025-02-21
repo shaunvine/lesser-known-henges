@@ -34,9 +34,12 @@
   padding: 5px;
 }
 
-#contact,
-#gallery,
-#about {
+a {
+  text-decoration: none;
+  -webkit-text-decoration: none; /* Safari-specific */
+}
+
+#contact, #gallery, #about {
   min-height: 100vh;
   width: 100%;
   position: relative;
@@ -44,8 +47,7 @@
   color: rgb(150, 150, 150);
 }
 
-.overlay,
-video {
+.overlay, video {
   position: fixed;
   top: 0;
   left: 0;
@@ -53,14 +55,7 @@ video {
   height: 100%;
 }
 
-#contact .contact-container .form-container form .message textarea,
-#contact
-  .contact-container
-  .form-container
-  form
-  .grid-container
-  .form-group
-  input {
+#contact .contact-container .form-container form .message textarea, #contact .contact-container .form-container form .grid-container .form-group input {
   background: #525252;
 }
 
@@ -341,12 +336,20 @@ video {
   font-weight: 500;
   padding: 0.25rem;
 }
+.overlay h1 a {
+  text-decoration: none;
+}
 @media (orientation: portrait) and (max-width: 1025px) {
   .overlay h1 {
     font-size: 5rem;
     margin-top: 5rem;
     margin-left: 5px;
     margin-right: 5px;
+  }
+}
+@media (orientation: portrait) and (max-height: 700px) {
+  .overlay h1 {
+    font-size: 3rem;
   }
 }
 .overlay p {
@@ -549,8 +552,7 @@ video {
   }
 }
 @keyframes levitation {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0);
   }
   50% {
@@ -683,23 +685,11 @@ video {
   flex-direction: column;
   gap: 10px;
 }
-#contact
-  .contact-container
-  .form-container
-  form
-  .grid-container
-  .form-group
-  label {
+#contact .contact-container .form-container form .grid-container .form-group label {
   color: white;
   margin-bottom: 5px;
 }
-#contact
-  .contact-container
-  .form-container
-  form
-  .grid-container
-  .form-group
-  input {
+#contact .contact-container .form-container form .grid-container .form-group input {
   border: none;
   border-radius: 8px;
   padding: 15px;
@@ -707,23 +697,11 @@ video {
   font-family: inherit;
   font-size: inherit;
 }
-#contact
-  .contact-container
-  .form-container
-  form
-  .grid-container
-  .form-group
-  input:focus {
+#contact .contact-container .form-container form .grid-container .form-group input:focus {
   outline: none;
   background: #393939;
 }
-#contact
-  .contact-container
-  .form-container
-  form
-  .grid-container
-  .form-group
-  textarea {
+#contact .contact-container .form-container form .grid-container .form-group textarea {
   resize: none;
   height: 100px;
 }
