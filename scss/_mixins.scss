@@ -87,6 +87,13 @@
   @media (max-width: 430px) {
     @content;
   }
+
+}
+// Smart Phone 12mini Vertical
+@mixin smartphone-vertical-small {
+  @media (max-width: 375px) {
+    @content;
+  }
 }
 // Phone Small
 @mixin smartphone-small {

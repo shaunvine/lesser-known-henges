@@ -520,6 +520,15 @@ video {
     margin-top: 50vh;
   }
 }
+@media (max-width: 375px) {
+  #gallery .gallery-container {
+    flex-direction: column;
+    height: auto;
+    top: 100px;
+    padding-bottom: 20vh;
+    margin-top: 85vh;
+  }
+}
 @media (orientation: landscape) and (max-height: 450px) {
   #gallery .gallery-container {
     flex-direction: column;
