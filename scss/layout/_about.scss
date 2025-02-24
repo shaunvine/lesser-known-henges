@@ -2,7 +2,7 @@
 
 #about {
   @extend %section;
-  height: 100vh;
+  // height: 100vh;
 
   @include smartphone-horizontal {
     padding-top: 10vh;
@@ -51,7 +51,7 @@
       padding-bottom: 10vh;
 
       @include smartphone-vertical {
-        padding-bottom: 32vh;
+        // padding-bottom: 32vh;
       }
 
       // Smart Phone12 mini Vertical
