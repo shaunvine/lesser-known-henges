@@ -48,6 +48,14 @@
     .text-container {
       background: $background;
       padding-bottom: 10vh;
+
+      @include smartphone-vertical {
+        padding-bottom: 32vh;
+      }
+
+      @include smartphone-vertical-small {
+        padding-bottom: 32vh;
+      }
     }
 
     .phrase {
