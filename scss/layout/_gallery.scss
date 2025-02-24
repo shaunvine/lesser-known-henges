@@ -28,10 +28,10 @@
       margin-top: 50vh;
     }
 
-    // Smart Phone 12mini Vertical
+    // Smart Phone12 mini Vertical
     @include smartphone-vertical-small {
       @include mobile-gallery-container(20vh);
-      margin-top: 85vh;
+      margin-top: 5vh;
     }
 
     @include smartphone-horizontal {

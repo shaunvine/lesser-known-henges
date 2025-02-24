@@ -10,6 +10,7 @@
   }
 
   .about-container {
+     position: relative;
     display: grid;
     place-items: center;
     height: 100%;
@@ -53,8 +54,9 @@
         padding-bottom: 32vh;
       }
 
+      // Smart Phone12 mini Vertical
       @include smartphone-vertical-small {
-        padding-bottom: 32vh;
+        padding-bottom: 5vh;
       }
     }
 
@@ -75,4 +77,8 @@
       }
     }
   }
+}
+
+span.phrase.active {
+  margin-bottom: 10vh;
 }

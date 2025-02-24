@@ -406,6 +406,7 @@ video {
   }
 }
 #about .about-container {
+  position: relative;
   display: grid;
   place-items: center;
   height: 100%;
@@ -453,7 +454,7 @@ video {
 }
 @media (max-width: 375px) {
   #about .about-container .text-container {
-    padding-bottom: 32vh;
+    padding-bottom: 5vh;
   }
 }
 #about .about-container .phrase {
@@ -488,6 +489,10 @@ video {
 }
 #about .about-container .phrase.active {
   color: #c9c9c9;
+}
+
+span.phrase.active {
+  margin-bottom: 10vh;
 }
 
 /* Gallery Section -------------------- */
@@ -536,7 +541,7 @@ video {
     height: auto;
     top: 100px;
     padding-bottom: 20vh;
-    margin-top: 85vh;
+    margin-top: 5vh;
   }
 }
 @media (orientation: landscape) and (max-height: 450px) {
